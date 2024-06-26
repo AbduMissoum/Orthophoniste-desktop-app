@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerAfficherSuivi">
+    <left>
+        <AnchorPane prefHeight="284.0" prefWidth="600.0" style="-fx-background-color: #0599ff;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="deroulement" layoutX="89.0" layoutY="165.0" text="Type de déroulement :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="observation" layoutX="89.0" layoutY="213.0" text="Observation :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="date" layoutX="89.0" layoutY="116.0" text="Date de suivi :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="numDossier" layoutX="89.0" layoutY="66.0" text="N° de dossier :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Button fx:id="retour" layoutX="6.0" layoutY="262.0" mnemonicParsing="false" onAction="#retourMesSuivi" style="-fx-background-color: transparent;" text="Retour" textFill="WHITE" underline="true" />
+                <Button layoutX="524.0" layoutY="249.0" mnemonicParsing="false" text="Modifier" />
+                <Label layoutX="206.0" layoutY="14.0" text="Séance de suivi" textFill="WHITE">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <top>
+        <AnchorPane prefHeight="111.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@orthophoniste_logo2.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="63.0" fitWidth="59.0" layoutX="17.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@silhouette-male-user-icon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="85.0" layoutY="45.0" text="Patient">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

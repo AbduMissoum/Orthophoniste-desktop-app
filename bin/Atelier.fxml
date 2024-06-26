@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="346.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerAtelier">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="146.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@orthophoniste_logo2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="34.0" layoutY="79.0" text="Ajouter un atelier de groupe" textFill="#0599ff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="dossierNum" layoutX="81.0" layoutY="217.0" prefHeight="28.0" prefWidth="175.0" promptText="N° du dossier du patient" style="-fx-border-color: #0599ff;" />
+        <DatePicker fx:id="date" layoutX="30.0" layoutY="276.0" prefHeight="25.0" prefWidth="139.0" promptText="Choisir une date" />
+        <TextField fx:id="hourMin" layoutX="176.0" layoutY="275.0" prefHeight="28.0" prefWidth="139.0" promptText="Heure: hr:min" style="-fx-border-color: #0599ff;" />
+        <Button fx:id="ajouter" layoutX="119.0" layoutY="354.0" mnemonicParsing="false" onAction="#ajouterAtelier" style="-fx-background-color: #0599ff;" text="Ajouter" textFill="WHITE" />
+        <Button fx:id="annuler" layoutX="188.0" layoutY="354.0" mnemonicParsing="false" onAction="#retourPlannifier" style="-fx-background-color: #0599ff;" text="Annuler" textFill="WHITE" />
+      <TextField fx:id="thematique" layoutX="81.0" layoutY="160.0" prefHeight="28.0" prefWidth="175.0" promptText="Préciser la thématique" style="-fx-border-color: #0599ff;" />
+      <Label fx:id="err" layoutX="125.0" layoutY="322.0" text="Label" textFill="#cd1010" />
+    </children>
+</AnchorPane>

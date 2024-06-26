@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerConsultationPage">
+    <left>
+        <AnchorPane prefHeight="284.0" prefWidth="600.0" style="-fx-background-color: #0599ff;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="date" layoutX="353.0" layoutY="68.0" text="Date :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="observation" layoutX="318.0" layoutY="108.0" text="Observation :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="prenom" layoutX="5.0" layoutY="108.0" text="Prénom :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nom" layoutX="14.0" layoutY="68.0" text="Nom :" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Button fx:id="retourBtn" layoutX="6.0" layoutY="262.0" mnemonicParsing="false" onAction="#retourMesConsultation" style="-fx-background-color: transparent;" text="Retour" textFill="WHITE" underline="true" />
+            <Button fx:id="modifier" layoutX="454.0" layoutY="250.0" mnemonicParsing="false" onAction="#modifierConsultation" text="modifier" />
+            <Label layoutX="173.0" layoutY="14.0" text="Consultation" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="age" layoutX="14.0" layoutY="141.0" text="Age:" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="type" layoutX="9.0" layoutY="175.0" text="Adulte/Enfant:" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <top>
+        <AnchorPane prefHeight="111.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@orthophoniste_logo2.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

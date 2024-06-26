@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="346.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerSuivi">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="146.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@orthophoniste_logo2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="39.0" layoutY="82.0" text="Ajouter une séance de suivi" textFill="#0599ff">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="numDossier" layoutX="84.0" layoutY="149.0" prefHeight="28.0" prefWidth="175.0" promptText="N° du dossier du patient" style="-fx-border-color: #0599ff;" />
+        <Button fx:id="ajouter" layoutX="99.0" layoutY="313.0" mnemonicParsing="false" onAction="#ajouterSuivi" style="-fx-background-color: #0599ff;" text="Ajouter" textFill="WHITE" />
+        <Button fx:id="retour" layoutX="188.0" layoutY="313.0" mnemonicParsing="false" onAction="#retourPlannifier" style="-fx-background-color: #0599ff;" text="Annuler" textFill="WHITE" />
+      <DatePicker fx:id="date" layoutX="84.0" layoutY="241.0" prefHeight="25.0" prefWidth="86.0" promptText="Choisir une date" />
+      <TextField fx:id="hourMin" layoutX="181.0" layoutY="240.0" prefHeight="17.0" prefWidth="102.0" promptText="Heure: hr:min" style="-fx-border-color: #0599ff;">
+         <font>
+            <Font name="Arial Narrow" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="Dispo" layoutX="113.0" layoutY="281.0" textFill="#dd0808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="deroulement" layoutX="95.0" layoutY="200.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
